@@ -15,10 +15,16 @@ public class ReglaFalsa {
      * @param args the command line arguments
      */
    public static double f (double x){
-        return -(x*x)-(2*x)+1;
+       //Insertar la función 
+        double e = 2.718281828182;
+        
+        double resultado = Math.pow(e, -1*x) -x;
+        
+        return resultado;
     }
     
     public static void main(String[] args) {
+        
         double a = 0, b = 1, c = 0;
         
         if (f(a)*f(b)>0){
