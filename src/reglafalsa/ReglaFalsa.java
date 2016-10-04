@@ -26,8 +26,8 @@ public class ReglaFalsa {
             return;
         }
         while (true){
-            c = (a+b)/2;
-            c = ((f(b)*a)-(f(a)*b))/(f(b)-f(a));
+            
+            c = ((f(a)*b)-(f(b)*a))/(f(a)-f(b));
             if (Math.abs(f(c))<=1e-10){
                 System.out.println("La raiz estimada es r = " + c);
                 System.out.println("El valor de f en rs = " + f(c));
@@ -40,5 +40,4 @@ public class ReglaFalsa {
             }
         }
     }
-    
 }
